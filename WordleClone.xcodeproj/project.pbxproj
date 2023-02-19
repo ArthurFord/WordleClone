@@ -11,6 +11,12 @@
 		CE2967BE29A01D630090F801 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2967BD29A01D630090F801 /* ContentView.swift */; };
 		CE2967C029A01D640090F801 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE2967BF29A01D640090F801 /* Assets.xcassets */; };
 		CE2967C329A01D640090F801 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE2967C229A01D640090F801 /* Preview Assets.xcassets */; };
+		CE2967CA29A01D910090F801 /* sample list of words.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2967C929A01D910090F801 /* sample list of words.swift */; };
+		CE2967CD29A01EB50090F801 /* LetterBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2967CC29A01EB50090F801 /* LetterBox.swift */; };
+		CE2967D129A021670090F801 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2967D029A021670090F801 /* Game.swift */; };
+		CE2967D329A02A370090F801 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2967D229A02A370090F801 /* Models.swift */; };
+		CE2967D529A103E60090F801 /* GameBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2967D429A103E60090F801 /* GameBoard.swift */; };
+		CE2967D729A14A370090F801 /* GameRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2967D629A14A370090F801 /* GameRow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +25,12 @@
 		CE2967BD29A01D630090F801 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		CE2967BF29A01D640090F801 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE2967C229A01D640090F801 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		CE2967C929A01D910090F801 /* sample list of words.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "sample list of words.swift"; sourceTree = "<group>"; };
+		CE2967CC29A01EB50090F801 /* LetterBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LetterBox.swift; sourceTree = "<group>"; };
+		CE2967D029A021670090F801 /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
+		CE2967D229A02A370090F801 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		CE2967D429A103E60090F801 /* GameBoard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameBoard.swift; sourceTree = "<group>"; };
+		CE2967D629A14A370090F801 /* GameRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameRow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +63,10 @@
 		CE2967BA29A01D630090F801 /* WordleClone */ = {
 			isa = PBXGroup;
 			children = (
+				CE2967CF29A021540090F801 /* ViewModels */,
+				CE2967CE29A020D50090F801 /* Models */,
 				CE2967BB29A01D630090F801 /* WordleCloneApp.swift */,
-				CE2967BD29A01D630090F801 /* ContentView.swift */,
+				CE2967CB29A01E9E0090F801 /* Views */,
 				CE2967BF29A01D640090F801 /* Assets.xcassets */,
 				CE2967C129A01D640090F801 /* Preview Content */,
 			);
@@ -65,6 +79,34 @@
 				CE2967C229A01D640090F801 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		CE2967CB29A01E9E0090F801 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CE2967BD29A01D630090F801 /* ContentView.swift */,
+				CE2967D429A103E60090F801 /* GameBoard.swift */,
+				CE2967D629A14A370090F801 /* GameRow.swift */,
+				CE2967CC29A01EB50090F801 /* LetterBox.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		CE2967CE29A020D50090F801 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CE2967C929A01D910090F801 /* sample list of words.swift */,
+				CE2967D229A02A370090F801 /* Models.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		CE2967CF29A021540090F801 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				CE2967D029A021670090F801 /* Game.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +179,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE2967CA29A01D910090F801 /* sample list of words.swift in Sources */,
+				CE2967D129A021670090F801 /* Game.swift in Sources */,
+				CE2967D729A14A370090F801 /* GameRow.swift in Sources */,
 				CE2967BE29A01D630090F801 /* ContentView.swift in Sources */,
+				CE2967D529A103E60090F801 /* GameBoard.swift in Sources */,
+				CE2967D329A02A370090F801 /* Models.swift in Sources */,
 				CE2967BC29A01D630090F801 /* WordleCloneApp.swift in Sources */,
+				CE2967CD29A01EB50090F801 /* LetterBox.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
